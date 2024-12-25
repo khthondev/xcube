@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Starry Night Background -->
+  <iframe src="stars.html" class="background-stars"></iframe>
+
+  <header class="header">XCube Studio</header>
+ 
+  <div class="main-container">
+    <!-- Hero Section -->
+    <section class="slide">
+      <div class="content hero">
+        <div class="hero-text">
+          <h1>ACCELERATE YOUR DIGITAL EVOLUTION</h1>
+          <p>Empowering businesses to rapidly build, deploy, and adapt their products with our expert tech team.</p>
+        </div>
+        <button class="btn" onclick="scrollToBooking()">INITIATE YOUR PROJECT</button>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="slide">
+      <div class="content cards">
+        <h1>COMMON DEVELOPMENT CHALLENGES</h1>
+        <div class="cards-list">
+          <div class="card">
+            <h3>High Costs & Slow Delivery</h3>
+            <p>Our efficient subscription model offers cost-effective solutions without compromising on quality or speed.</p>
+          </div>
+          <div class="card">
+            <h3>Uncertain Strategy</h3>
+            <p>Benefit from our strategic guidance to optimize your product's design and technology for long-term success.</p>
+          </div>
+          <div class="card">
+            <h3>Lack of Transparency</h3>
+            <p>Our real-time CRM access ensures you're always in the loop, with detailed progress tracking and reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <!-- Booking Form Section -->
+    <section class="slide">
+      <div class="content booking-form" id="booking">
+        <h1>SCHEDULE A CONSULTATION</h1>
+        <form>
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="date">Preferred Date</label>
+            <input type="date" id="date" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="time">Preferred Time</label>
+            <select id="time" class="form-input" required>
+              <option value="">Select a time slot</option>
+              <option>09:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>02:00 PM</option>
+              <option>03:00 PM</option>
+              <option>04:00 PM</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Book Consultation</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">Scroll to the right to learn more →</footer>
+
+  <script>
+    function scrollToBooking() {
+      document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
